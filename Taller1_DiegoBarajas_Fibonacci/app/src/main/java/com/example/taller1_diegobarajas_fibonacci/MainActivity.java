@@ -2,6 +2,7 @@ package com.example.taller1_diegobarajas_fibonacci;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,9 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     TextView serie;
     Button calcular;
-    ScrollView display;
-    LinearLayout layout;
-    Integer cantidadElementos;
+    EditText cantidad;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,21 +27,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         calcular = findViewById(R.id.calcular);
-        display = findViewById(R.id.display);
-        layout = findViewById(R.id.linearLayout);
-        cantidadElementos = 2;
-
-        for (Integer i = 0; i < cantidadElementos; i++){
-            TextView vistaNueva = new TextView(this);
-            vistaNueva.setText(i.toString());
-            vistaNueva.setId(i);
-            layout.addView(vistaNueva);
-        }
-
+        cantidad = findViewById(R.id.cantidad);
     }
 
     public void Calcular(View v){
 
+        /*
         TextView valor1 = findViewById(cantidadElementos - 1);
         TextView valor2 = findViewById(cantidadElementos - 2);
 
@@ -53,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
         layout.addView(vistaNueva);
 
         cantidadElementos++;
+        */
+
+        Intent change = new Intent(this, Serie_Fibonacci.class);
+        change.putExtra("cantidad", Integer.parseInt(cantidad.getText().toString()));
+        startActivity(change);
+
     }
 
 }
