@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.taller1_diegobarajas_fibonacci">
+    package="com.example.ejercicio">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,11 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".paisDetalle"></activity>
-        <activity android:name=".paises" />
-        <activity android:name=".Factorial" />
-        <activity android:name=".Fibonacci" />
-        <activity android:name=".Serie_Fibonacci" />
+        <activity android:name=".otra"></activity>
+        <activity android:name=".nombreUsuario" />
+        <activity android:name=".Web" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

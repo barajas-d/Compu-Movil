@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:hint="Nombre de Usuario"
+        android:paddingTop="25dp"/>
+
+    <Spinner
+        android:id="@+id/combo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Texto"
+        android:paddingTop="25dp"/>
+
+    <Button
+        android:id="@+id/botonWeb"
+        android:text="Web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/combo"
+        android:paddingTop="25dp"
+        android:onClick="clickWeb"/>
+
+    <Button
+        android:id="@+id/botonFrame"
+        android:text="Frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/botonWeb"
+        android:paddingTop="25dp"
+        android:onClick="clickFrame"/>
+
+    <Button
+        android:id="@+id/botonList"
+        android:text="Frame List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/botonFrame"
+        android:paddingTop="25dp"
+        android:onClick="clickList"/>
+
+</RelativeLayout>
