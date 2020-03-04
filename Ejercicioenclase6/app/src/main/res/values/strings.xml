@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio en clase - 6</string>
+    <string name="Concedido">Permiso concedido!</string>
+    <string name="Denegado">Permiso denegado</string>
+</resources>
